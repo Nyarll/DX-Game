@@ -4,7 +4,7 @@
     <Filter Include="src">
       <UniqueIdentifier>{fbb0f1fe-a3d8-46ee-9984-227a58232606}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\NewFilter1">
+    <Filter Include="src\Framework">
       <UniqueIdentifier>{e957ab27-644e-4be5-809d-5c931005efbd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -14,6 +14,12 @@
     </ClInclude>
     <ClInclude Include="src\Game.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\InputManager.h">
+      <Filter>src\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Singleton.h">
+      <Filter>src\Framework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -25,6 +31,9 @@
     </ClCompile>
     <ClCompile Include="src\Game.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Framework\InputManager.cpp">
+      <Filter>src\Framework</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

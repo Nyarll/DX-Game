@@ -23,4 +23,8 @@ public:
 	void Initialize();
 	void Execute();
 	void Finalize();
+
+private:
+	void Update();
+	void Render();
 };

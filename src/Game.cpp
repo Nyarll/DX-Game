@@ -1,5 +1,6 @@
-#include "pch.h"
 #include "Game.h"
+
+#include "Framework/InputManager.h"
 
 const std::string Game::TITLE = "DxLibGame";
 const std::string Game::VERSION = "develop 0.0.0";
@@ -20,14 +21,25 @@ void Game::Execute()
 {
 	while (!ProcessMessage())
 	{
-		//TODO: Update
-		//TODO: Render
+		Update();
+		Render();
 
+		InputManager::singleton().UpdateOld();
+		
 		ScreenFlip();
 		ClearDrawScreen();
 	}
 }
 
 void Game::Finalize()
+{
+}
+
+void Game::Update()
+{
+	InputManager::singleton().Update();
+}
+
+void Game::Render()
 {
 }
