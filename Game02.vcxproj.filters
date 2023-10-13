@@ -19,6 +19,12 @@
     <Filter Include="src\Framework\Json">
       <UniqueIdentifier>{0e588bff-1742-46ae-a13e-2c7b5f87552b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Framework\Random">
+      <UniqueIdentifier>{3f486829-3ca0-4e37-a2fe-3535e8c06439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameUtils">
+      <UniqueIdentifier>{6771f8c1-d4ab-46f0-ac22-963bf280ec9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -48,6 +54,18 @@
     <ClInclude Include="src\Framework\Json\Json.h">
       <Filter>src\Framework\Json</Filter>
     </ClInclude>
+    <ClInclude Include="src\Framework\Random\Random.h">
+      <Filter>src\Framework\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameUtils\GameUtils.h">
+      <Filter>src\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameUtils\GameObject.h">
+      <Filter>src\GameUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Vector2.h">
+      <Filter>src\Framework</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -65,5 +83,17 @@
     <ClCompile Include="src\Framework\Json\Json.cpp">
       <Filter>src\Framework\Json</Filter>
     </ClCompile>
+    <ClCompile Include="src\Framework\Random\Random.cpp">
+      <Filter>src\Framework\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Framework\Vector2.cpp">
+      <Filter>src\Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
