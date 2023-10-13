@@ -16,10 +16,23 @@ private:
 	float x, y;
 
 public:
+
+	static const Vector2 ZERO;
+
 	Vector2();
 	Vector2(const Vector2& vec);
 	Vector2(float x, float y);
 	Vector2(int x, int y);
+
+	float GetX()
+	{
+		return x;
+	}
+
+	float GetY()
+	{
+		return y;
+	}
 
 	inline Vector2 operator +() const { return *this; }
 	inline Vector2 operator -() const { return (*this) * (-1); }
