@@ -1,7 +1,7 @@
 # Game Title
 ![Game Title: use DxLib game. C++](url)
 
-#License
+# License
 The MIT License (MIT)
 
 Copyright (c) 2023 UNLUCKY
