@@ -1,3 +1,14 @@
+// ===== ===== ===== ===== ===== ===== ===== =====
+// @file	WinMain.cpp
+// @brief	エントリポイント
+// 
+// @date	2023-10-13
+// @update	2023-10-13
+// 
+// @author	UNLUCKY
+// ===== ===== ===== ===== ===== ===== ===== =====
+
+#include "Game.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -9,7 +20,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SetOutApplicationLogValidFlag(FALSE);
 
 	ChangeWindowMode(TRUE);	          // ウインドウモードで実行
-	SetMainWindowText("test window");    // ウインドウタイトルの設定
+
+	std::string windowTitle = Game::TITLE + "    " + Game::VERSION;
+	SetMainWindowText(windowTitle.c_str());    // ウインドウタイトルの設定
 //	SetWindowIconID(IDI_ICON1);       // ウインドウアイコンの設定
 
 	// 初期状態の画面モードの設定
@@ -23,6 +36,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// 描画先を裏画面に設定
 	SetDrawScreen(DX_SCREEN_BACK);
+
+	std::unique_ptr<Game> game = std::make_unique<Game>();
+	game->Initialize();
+
+	game->Execute();
+
+	game->Finalize();
 
 	// DXライブラリの終了処理
 	DxLib_End();
