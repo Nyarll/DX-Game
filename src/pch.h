@@ -43,3 +43,6 @@
 
 // DxLib
 #include <DxLib.h>
+
+// EnTT
+#include <entt.hpp>
