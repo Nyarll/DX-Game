@@ -1,6 +1,6 @@
 #include "Game.h"
 
-#include "Framework/InputManager.h"
+#include "Framework/Input/InputManager.h"
 
 const std::string Game::TITLE = "DxLibGame";
 const std::string Game::VERSION = "develop 0.0.0";

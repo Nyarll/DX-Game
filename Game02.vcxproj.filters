@@ -7,6 +7,15 @@
     <Filter Include="src\Framework">
       <UniqueIdentifier>{e957ab27-644e-4be5-809d-5c931005efbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{7418620c-40f8-4f2c-989c-605686b15769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\Input">
+      <UniqueIdentifier>{875e31d7-85b3-4921-8c10-2717afd39ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\Context">
+      <UniqueIdentifier>{47f5ba0d-26dd-435a-b736-ceef4ab5c920}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -15,11 +24,20 @@
     <ClInclude Include="src\Game.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\Framework\InputManager.h">
-      <Filter>src\Framework</Filter>
-    </ClInclude>
     <ClInclude Include="src\Framework\Singleton.h">
       <Filter>src\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\IScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Input\InputManager.h">
+      <Filter>src\Framework\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Context\TypeID.h">
+      <Filter>src\Framework\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Context\GameContext.h">
+      <Filter>src\Framework\Context</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,8 +50,8 @@
     <ClCompile Include="src\Game.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Framework\InputManager.cpp">
-      <Filter>src\Framework</Filter>
+    <ClCompile Include="src\Framework\Input\InputManager.cpp">
+      <Filter>src\Framework\Input</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

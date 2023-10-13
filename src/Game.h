@@ -10,14 +10,16 @@
 
 #pragma once
 
-class Game
+#include "Framework/Context/GameContext.h"
+
+class Game : public GameContext
 {
 public:
 	static const std::string TITLE;
 	static const std::string VERSION;
 
 public:
-	Game();
+	Game() noexcept(false);
 	~Game();
 
 	void Initialize();
