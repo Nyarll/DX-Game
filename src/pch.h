@@ -10,6 +10,10 @@
 
 #pragma once
 
+#define _USE_MATH_DEFINES
+
+#include <cassert>
+
 // <STL>
 #include <exception>
 #include <memory>
@@ -38,8 +42,6 @@
 
 #include <utility>
 
-#define _USE_MATH_DEFINES
-#include <cmath>
 
 // DxLib
 #include <DxLib.h>

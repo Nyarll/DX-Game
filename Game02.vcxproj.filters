@@ -16,6 +16,9 @@
     <Filter Include="src\Framework\Context">
       <UniqueIdentifier>{47f5ba0d-26dd-435a-b736-ceef4ab5c920}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Framework\Json">
+      <UniqueIdentifier>{0e588bff-1742-46ae-a13e-2c7b5f87552b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -39,6 +42,12 @@
     <ClInclude Include="src\Framework\Context\GameContext.h">
       <Filter>src\Framework\Context</Filter>
     </ClInclude>
+    <ClInclude Include="src\Framework\Json\JsonImport.h">
+      <Filter>src\Framework\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Framework\Json\Json.h">
+      <Filter>src\Framework\Json</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -52,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="src\Framework\Input\InputManager.cpp">
       <Filter>src\Framework\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Framework\Json\Json.cpp">
+      <Filter>src\Framework\Json</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
