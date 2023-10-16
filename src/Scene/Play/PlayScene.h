@@ -1,6 +1,6 @@
 // ===== ===== ===== ===== ===== ===== ===== =====
-// @file	StartUpScene.h
-// @brief	ゲーム起動時
+// @file	PlayScene.h
+// @brief	ゲームプレイ
 // 
 // @date	2023-10-16
 // @update	2023-10-16
@@ -12,7 +12,7 @@
 
 #include "../IScene.h"
 
-class StartUpScene : public IScene
+class PlayScene : public IScene
 {
 private:
 	int test_count = 0;
@@ -24,6 +24,6 @@ public:
 
 	static IScene* Create()
 	{
-		return { new StartUpScene };
+		return { new PlayScene };
 	}
 };

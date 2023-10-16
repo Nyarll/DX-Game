@@ -19,9 +19,9 @@ void InputManager::UpdateOld()
 	keyboard->UpdateOld();
 }
 
-std::unique_ptr<InputKeyboard>& InputManager::Keyboard()
+InputKeyboard& InputManager::Keyboard()
 {
-	return keyboard;
+	return *keyboard.get();
 }
 
 void InputKeyboard::Update()

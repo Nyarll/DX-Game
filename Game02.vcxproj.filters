@@ -28,6 +28,15 @@
     <Filter Include="src\Scene\StartUp">
       <UniqueIdentifier>{6a92b7f9-e25a-4e32-bed3-62c22b82aa75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\Title">
+      <UniqueIdentifier>{153dae45-e425-4f92-9bcf-443f14ccf960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Play">
+      <UniqueIdentifier>{884f1f2b-5836-4f43-8df2-4ef9565c553b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Result">
+      <UniqueIdentifier>{e76d02a7-b5b6-45f4-add6-3d96bb46bad5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -78,6 +87,15 @@
     <ClInclude Include="src\Scene\StartUp\StartUpScene.h">
       <Filter>src\Scene\StartUp</Filter>
     </ClInclude>
+    <ClInclude Include="src\Scene\Title\TitleScene.h">
+      <Filter>src\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Play\PlayScene.h">
+      <Filter>src\Scene\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Result\ResultScene.h">
+      <Filter>src\Scene\Result</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -106,6 +124,15 @@
     </ClCompile>
     <ClCompile Include="src\Scene\StartUp\StartUpScene.cpp">
       <Filter>src\Scene\StartUp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Title\TitleScene.cpp">
+      <Filter>src\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Play\PlayScene.cpp">
+      <Filter>src\Scene\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Result\ResultScene.cpp">
+      <Filter>src\Scene\Result</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

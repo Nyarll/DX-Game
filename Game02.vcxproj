@@ -32,9 +32,12 @@
     <ClInclude Include="src\GameUtils\GameUtils.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Scene\IScene.h" />
+    <ClInclude Include="src\Scene\Play\PlayScene.h" />
+    <ClInclude Include="src\Scene\Result\ResultScene.h" />
     <ClInclude Include="src\Scene\Scene.h" />
     <ClInclude Include="src\Scene\SceneManager.h" />
     <ClInclude Include="src\Scene\StartUp\StartUpScene.h" />
+    <ClInclude Include="src\Scene\Title\TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Framework\Input\InputManager.cpp" />
@@ -52,8 +55,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="src\Scene\Play\PlayScene.cpp" />
+    <ClCompile Include="src\Scene\Result\ResultScene.cpp" />
     <ClCompile Include="src\Scene\SceneManager.cpp" />
     <ClCompile Include="src\Scene\StartUp\StartUpScene.cpp" />
+    <ClCompile Include="src\Scene\Title\TitleScene.cpp" />
     <ClCompile Include="src\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>

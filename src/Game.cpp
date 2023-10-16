@@ -54,6 +54,9 @@ void Game::RegisterScene()
 	auto& manager = Get<SceneManager>();
 
 	manager.Register(SceneManager::SceneID::START_UP, StartUpScene::Create);
+	manager.Register(SceneManager::SceneID::TITLE, TitleScene::Create);
+	manager.Register(SceneManager::SceneID::PLAY, PlayScene::Create);
+	manager.Register(SceneManager::SceneID::RESULT, ResultScene::Create);
 
 	manager.SetStartScene(*this, SceneManager::SceneID::START_UP);
 }

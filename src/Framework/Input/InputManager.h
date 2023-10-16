@@ -28,7 +28,7 @@ public:
 	void Update();
 	void UpdateOld();
 
-	std::unique_ptr<InputKeyboard>& Keyboard();
+	InputKeyboard& Keyboard();
 };
 
 class InputKeyboard

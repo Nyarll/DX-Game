@@ -1,6 +1,6 @@
 // ===== ===== ===== ===== ===== ===== ===== =====
-// @file	StartUpScene.h
-// @brief	ゲーム起動時
+// @file	ResultScene.h
+// @brief	リザルト
 // 
 // @date	2023-10-16
 // @update	2023-10-16
@@ -12,11 +12,8 @@
 
 #include "../IScene.h"
 
-class StartUpScene : public IScene
+class ResultScene : public IScene
 {
-private:
-	int test_count = 0;
-
 public:
 	virtual void Initialize(GameContext& context)override;
 	virtual void Update(GameContext& context)override;
@@ -24,6 +21,6 @@ public:
 
 	static IScene* Create()
 	{
-		return { new StartUpScene };
+		return { new ResultScene };
 	}
 };

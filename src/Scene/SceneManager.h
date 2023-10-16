@@ -25,6 +25,7 @@ public:
 		START_UP,
 		TITLE,
 		PLAY,
+		RESULT,
 
 		NUM_SCENES
 	};
