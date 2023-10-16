@@ -25,6 +25,9 @@
     <Filter Include="src\GameUtils">
       <UniqueIdentifier>{6771f8c1-d4ab-46f0-ac22-963bf280ec9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene\StartUp">
+      <UniqueIdentifier>{6a92b7f9-e25a-4e32-bed3-62c22b82aa75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -66,6 +69,15 @@
     <ClInclude Include="src\Framework\Vector2.h">
       <Filter>src\Framework</Filter>
     </ClInclude>
+    <ClInclude Include="src\Scene\Scene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SceneManager.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\StartUp\StartUpScene.h">
+      <Filter>src\Scene\StartUp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -88,6 +100,12 @@
     </ClCompile>
     <ClCompile Include="src\Framework\Vector2.cpp">
       <Filter>src\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SceneManager.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\StartUp\StartUpScene.cpp">
+      <Filter>src\Scene\StartUp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

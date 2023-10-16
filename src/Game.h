@@ -29,4 +29,6 @@ public:
 private:
 	void Update();
 	void Render();
+
+	void RegisterScene();
 };
