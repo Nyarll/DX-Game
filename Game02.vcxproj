@@ -30,6 +30,8 @@
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\GameUtils\GameObject.h" />
     <ClInclude Include="src\GameUtils\GameUtils.h" />
+    <ClInclude Include="src\GameUtils\LogWindow\LogMessageWindow.h" />
+    <ClInclude Include="src\GameUtils\LogWindow\Message.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Scene\IScene.h" />
     <ClInclude Include="src\Scene\Play\PlayScene.h" />
@@ -45,6 +47,8 @@
     <ClCompile Include="src\Framework\Random\Random.cpp" />
     <ClCompile Include="src\Framework\Vector2.cpp" />
     <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameUtils\LogWindow\LogMessageWindow.cpp" />
+    <ClCompile Include="src\GameUtils\LogWindow\Message.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>

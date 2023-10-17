@@ -34,6 +34,16 @@ public:
 		return y;
 	}
 
+	void SetX(float _x)
+	{
+		x = _x;
+	}
+
+	void SetY(float _y)
+	{
+		y = _y;
+	}
+
 	inline Vector2 operator +() const { return *this; }
 	inline Vector2 operator -() const { return (*this) * (-1); }
 

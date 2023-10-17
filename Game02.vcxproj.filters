@@ -37,6 +37,9 @@
     <Filter Include="src\Scene\Result">
       <UniqueIdentifier>{e76d02a7-b5b6-45f4-add6-3d96bb46bad5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GameUtils\LogWindow">
+      <UniqueIdentifier>{e64a1515-c72b-42ee-9040-130a161004ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -96,6 +99,12 @@
     <ClInclude Include="src\Scene\Result\ResultScene.h">
       <Filter>src\Scene\Result</Filter>
     </ClInclude>
+    <ClInclude Include="src\GameUtils\LogWindow\Message.h">
+      <Filter>src\GameUtils\LogWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameUtils\LogWindow\LogMessageWindow.h">
+      <Filter>src\GameUtils\LogWindow</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -133,6 +142,12 @@
     </ClCompile>
     <ClCompile Include="src\Scene\Result\ResultScene.cpp">
       <Filter>src\Scene\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameUtils\LogWindow\Message.cpp">
+      <Filter>src\GameUtils\LogWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameUtils\LogWindow\LogMessageWindow.cpp">
+      <Filter>src\GameUtils\LogWindow</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
