@@ -26,7 +26,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 //	SetWindowIconID(IDI_ICON1);       // ウインドウアイコンの設定
 
 	// 初期状態の画面モードの設定
-	SetGraphMode(1280, 720, 32);
+	SetGraphMode(Game::SCREEN_WIDTH, Game::SCREEN_HEIGHT, 32);
 
 	// DXライブラリの初期化処理
 	if (DxLib_Init() == -1)

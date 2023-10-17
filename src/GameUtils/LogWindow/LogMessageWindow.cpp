@@ -1,8 +1,12 @@
 #include "LogMessageWindow.h"
 
+#include "../../Game.h"
+
 LogMessageWindow::LogMessageWindow()
 {
 	font = CreateFontToHandle("Meiryo UI", 16, -1);
+	start = Vector2(0, MAX_LOG_MSG);
+	end = Vector2(Game::SCREEN_CENTER_X, Game::SCREEN_HEIGHT);
 }
 
 LogMessageWindow::~LogMessageWindow()
@@ -11,24 +15,20 @@ LogMessageWindow::~LogMessageWindow()
 
 void LogMessageWindow::SetMessage(int msgColor, std::string fmt_msg, ...)
 {
-	int final_n, n = ((int)fmt_msg.size()) * 2;
+	int final_n, n = ((int)fmt_msg.size()) * 2; /* fmt_str‚Ì‚Q”{‚ÌƒTƒCƒY‚ð—\–ñ */
 	std::unique_ptr<char[]> formatted;
 	va_list ap;
-	while (true)
+	while (1)
 	{
 		formatted.reset(new char[n]);
-		strcpy_s(&formatted[0], fmt_msg.size(), fmt_msg.c_str());
+		strcpy_s(&formatted[0], n, fmt_msg.c_str());
 		va_start(ap, fmt_msg);
 		final_n = vsnprintf(&formatted[0], n, fmt_msg.c_str(), ap);
 		va_end(ap);
 		if (final_n < 0 || final_n >= n)
-		{
 			n += abs(final_n - n + 1);
-		}
 		else
-		{
 			break;
-		}
 	}
 	std::string result = std::string(formatted.get());
 
@@ -49,8 +49,8 @@ void LogMessageWindow::SetMessage(int msgColor, std::string fmt_msg, ...)
 void LogMessageWindow::Render()
 {
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 128);
-	DrawBox(start.GetX(), start.GetY(), 400, end.GetY(), GetColor(0, 0, 0), true);
-	DrawBox(start.GetX(), start.GetY(), 400, end.GetY(), GetColor(255, 0, 0), false);
+	DrawBox((int)start.GetX(), (int)start.GetY(), 400, (int)end.GetY(), GetColor(0, 0, 0), true);
+	DrawBox((int)start.GetX(), (int)start.GetY(), 400, (int)end.GetY(), GetColor(255, 0, 0), false);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	for (int i = 0; i < this->messages.size(); i++)

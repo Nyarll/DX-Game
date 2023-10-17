@@ -12,6 +12,8 @@
 
 #include "../IScene.h"
 
+class LogMessageWindow;
+
 class PlayScene : public IScene
 {
 private:
@@ -26,4 +28,6 @@ public:
 	{
 		return { new PlayScene };
 	}
+
+	LogMessageWindow& GetLogWindow();
 };

@@ -18,6 +18,12 @@ public:
 	static const std::string TITLE;
 	static const std::string VERSION;
 
+	static const int SCREEN_WIDTH = 1280;
+	static const int SCREEN_HEIGHT = 720;
+	
+	static const int SCREEN_CENTER_X = SCREEN_WIDTH / 2;
+	static const int SCREEN_CENTER_Y = SCREEN_HEIGHT / 2;
+
 public:
 	Game() noexcept(false);
 	~Game();
