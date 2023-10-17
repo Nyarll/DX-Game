@@ -19,6 +19,8 @@ class LogMessageWindow
 private:
 	static const int MAX_LOG_MSG = 20 * 8;
 
+	static const int LOG_WINDOW_SIZE = 400;
+
 	Vector2 start;
 	Vector2 end;
 	int font;

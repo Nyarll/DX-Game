@@ -6,7 +6,7 @@ LogMessageWindow::LogMessageWindow()
 {
 	font = CreateFontToHandle("Meiryo UI", 16, -1);
 	start = Vector2(0, MAX_LOG_MSG);
-	end = Vector2(Game::SCREEN_CENTER_X, Game::SCREEN_HEIGHT);
+	end = Vector2(start.GetX() + LOG_WINDOW_SIZE, start.GetY() + LOG_WINDOW_SIZE);
 }
 
 LogMessageWindow::~LogMessageWindow()
@@ -49,8 +49,8 @@ void LogMessageWindow::SetMessage(int msgColor, std::string fmt_msg, ...)
 void LogMessageWindow::Render()
 {
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, 128);
-	DrawBox((int)start.GetX(), (int)start.GetY(), 400, (int)end.GetY(), GetColor(0, 0, 0), true);
-	DrawBox((int)start.GetX(), (int)start.GetY(), 400, (int)end.GetY(), GetColor(255, 0, 0), false);
+	DrawBox((int)start.GetX(), (int)start.GetY(), (int)end.GetX(), (int)end.GetY(), GetColor(0, 0, 0), true);
+	DrawBox((int)start.GetX(), (int)start.GetY(), (int)end.GetX(), (int)end.GetY(), GetColor(255, 0, 0), false);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	for (int i = 0; i < this->messages.size(); i++)
