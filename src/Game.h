@@ -29,7 +29,7 @@ public:
 	~Game();
 
 	void Initialize();
-	void Execute();
+	void Run();
 	void Finalize();
 
 private:

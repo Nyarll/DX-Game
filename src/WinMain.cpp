@@ -40,7 +40,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	std::unique_ptr<Game> game = std::make_unique<Game>();
 	game->Initialize();
 
-	game->Execute();
+	game->Run();
 
 	game->Finalize();
 

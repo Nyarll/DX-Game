@@ -19,7 +19,7 @@ void Game::Initialize()
 	RegisterScene();
 }
 
-void Game::Execute()
+void Game::Run()
 {
 	while (!ProcessMessage())
 	{
